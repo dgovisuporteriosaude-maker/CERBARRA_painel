@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-21 20:09:35",
+  "gerado_em": "2025-11-21 20:16:40",
   "fila_classificacao": {
     "quantidade": 15,
-    "tempo_max_espera_min": 23
+    "tempo_max_espera_min": 35
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 37,
-      "tempo_max_espera_min": 170,
+      "total_fila": 35,
+      "tempo_max_espera_min": 168,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 2,
-        "VERDE": 29,
-        "AZUL": 6
+        "VERDE": 26,
+        "AZUL": 7
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 54,
-        "VERDE": 170,
-        "AZUL": 117
+        "AMARELO": 50,
+        "VERDE": 168,
+        "AZUL": 124
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 2,
-        "VERDE": 19,
+        "AMARELO": 1,
+        "VERDE": 17,
         "AZUL": 0
       }
     },
@@ -53,47 +53,11 @@
   "pacientes_criticos": [
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736945",
-      "paciente": "LAIS CONCEICAO DA SILVA",
-      "cor": "AMARELO",
-      "tempo_espera": "0:54",
-      "espera_min": 54,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
       "boletim": "1736948",
       "paciente": "VALDETE ALEMONGE PIRES",
       "cor": "AMARELO",
-      "tempo_espera": "0:43",
-      "espera_min": 43,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736888",
-      "paciente": "JOSE FLAVIO DA SILVA COSTA",
-      "cor": "VERDE",
-      "tempo_espera": "2:50",
-      "espera_min": 170,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736889",
-      "paciente": "RAIANE PAULINO DE OLIVEIRA",
-      "cor": "VERDE",
-      "tempo_espera": "2:48",
-      "espera_min": 168,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736901",
-      "paciente": "MYLENA MEDEIROS FERREIRA",
-      "cor": "VERDE",
-      "tempo_espera": "2:43",
-      "espera_min": 163,
+      "tempo_espera": "0:50",
+      "espera_min": 50,
       "estourado": true
     },
     {
@@ -101,8 +65,8 @@
       "boletim": "1736905",
       "paciente": "ROSILENE SANTOS DA SILVA",
       "cor": "VERDE",
-      "tempo_espera": "2:41",
-      "espera_min": 161,
+      "tempo_espera": "2:48",
+      "espera_min": 168,
       "estourado": true
     },
     {
@@ -110,8 +74,8 @@
       "boletim": "1736907",
       "paciente": "FRANCISCO DE ASSIS OLIVEIRA COSTA",
       "cor": "VERDE",
-      "tempo_espera": "2:35",
-      "espera_min": 155,
+      "tempo_espera": "2:42",
+      "espera_min": 162,
       "estourado": true
     },
     {
@@ -119,8 +83,8 @@
       "boletim": "1736910",
       "paciente": "MARIANA DE OLIVEIRA DE FIGUEIREDO",
       "cor": "VERDE",
-      "tempo_espera": "2:25",
-      "espera_min": 145,
+      "tempo_espera": "2:32",
+      "espera_min": 152,
       "estourado": true
     },
     {
@@ -128,8 +92,8 @@
       "boletim": "1736911",
       "paciente": "WILLIAM DE AQUINO ALVES",
       "cor": "VERDE",
-      "tempo_espera": "2:22",
-      "espera_min": 142,
+      "tempo_espera": "2:29",
+      "espera_min": 149,
       "estourado": true
     },
     {
@@ -137,8 +101,8 @@
       "boletim": "1736912",
       "paciente": "SAMANTHA ARAUJO DE SOUZA",
       "cor": "VERDE",
-      "tempo_espera": "2:18",
-      "espera_min": 138,
+      "tempo_espera": "2:25",
+      "espera_min": 145,
       "estourado": true
     },
     {
@@ -146,8 +110,8 @@
       "boletim": "1736914",
       "paciente": "MARCILENE DE MEDEIROS",
       "cor": "VERDE",
-      "tempo_espera": "2:16",
-      "espera_min": 136,
+      "tempo_espera": "2:23",
+      "espera_min": 143,
       "estourado": true
     },
     {
@@ -155,8 +119,8 @@
       "boletim": "1736919",
       "paciente": "LUISA LAPA VIEIRA BARBATO",
       "cor": "VERDE",
-      "tempo_espera": "2:11",
-      "espera_min": 131,
+      "tempo_espera": "2:18",
+      "espera_min": 138,
       "estourado": true
     },
     {
@@ -164,8 +128,8 @@
       "boletim": "1736920",
       "paciente": "LAILA CONCEICAO SOARES MENDES",
       "cor": "VERDE",
-      "tempo_espera": "2:10",
-      "espera_min": 130,
+      "tempo_espera": "2:17",
+      "espera_min": 137,
       "estourado": true
     },
     {
@@ -173,8 +137,8 @@
       "boletim": "1736922",
       "paciente": "JULYA RABELLO DA SILVA",
       "cor": "VERDE",
-      "tempo_espera": "2:4",
-      "espera_min": 124,
+      "tempo_espera": "2:11",
+      "espera_min": 131,
       "estourado": true
     },
     {
@@ -182,8 +146,8 @@
       "boletim": "1736923",
       "paciente": "JOSE OSMAR DO NASCIMENTO",
       "cor": "VERDE",
-      "tempo_espera": "2:2",
-      "espera_min": 122,
+      "tempo_espera": "2:9",
+      "espera_min": 129,
       "estourado": true
     },
     {
@@ -191,8 +155,8 @@
       "boletim": "1736924",
       "paciente": "ANDRE CARVALHO GARCIA PINTO",
       "cor": "VERDE",
-      "tempo_espera": "1:59",
-      "espera_min": 119,
+      "tempo_espera": "2:6",
+      "espera_min": 126,
       "estourado": true
     },
     {
@@ -200,8 +164,8 @@
       "boletim": "1736931",
       "paciente": "VIVIAN SANTANA FERREIRA",
       "cor": "VERDE",
-      "tempo_espera": "1:47",
-      "espera_min": 107,
+      "tempo_espera": "1:54",
+      "espera_min": 114,
       "estourado": true
     },
     {
@@ -209,8 +173,8 @@
       "boletim": "1736937",
       "paciente": "FELIPE DOS SANTOS COSTA",
       "cor": "VERDE",
-      "tempo_espera": "1:23",
-      "espera_min": 83,
+      "tempo_espera": "1:30",
+      "espera_min": 90,
       "estourado": true
     },
     {
@@ -218,8 +182,8 @@
       "boletim": "1736938",
       "paciente": "MONICA BATISTA DE LIMA",
       "cor": "VERDE",
-      "tempo_espera": "1:20",
-      "espera_min": 80,
+      "tempo_espera": "1:27",
+      "espera_min": 87,
       "estourado": true
     },
     {
@@ -227,8 +191,8 @@
       "boletim": "1736940",
       "paciente": "JULYA DA SILVA MARTINS DE PAULA",
       "cor": "VERDE",
-      "tempo_espera": "1:13",
-      "espera_min": 73,
+      "tempo_espera": "1:20",
+      "espera_min": 80,
       "estourado": true
     },
     {
@@ -236,9 +200,18 @@
       "boletim": "1736944",
       "paciente": "TAIANE FERREIRA MARQUES",
       "cor": "VERDE",
-      "tempo_espera": "1:13",
-      "espera_min": 73,
+      "tempo_espera": "1:20",
+      "espera_min": 80,
       "estourado": true
+    },
+    {
+      "especialidade": "CLINICA MEDICA",
+      "boletim": "1736947",
+      "paciente": "JONATHAN JUAN SILVA COELHO",
+      "cor": "VERDE",
+      "tempo_espera": "0:54",
+      "espera_min": 54,
+      "estourado": false
     }
   ]
 }
