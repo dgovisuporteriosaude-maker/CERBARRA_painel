@@ -39,6 +39,7 @@
       flex-direction: column;
       padding: 16px;
       gap: 16px;
+      background-color: #ffffff;
     }
 
     header {
@@ -353,7 +354,7 @@
       font-style: italic;
     }
 
-    /* Tags de status crítico com animação */
+    /* Tags de status crítico com animação (pisar) */
     @keyframes pulse-crit {
       0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.45); }
       70% { transform: scale(1.02); box-shadow: 0 0 0 8px rgba(185, 28, 28, 0); }
@@ -560,7 +561,6 @@
 
       if (!data.especialidades) return;
 
-      // Ordem: as que conhecemos primeiro, depois extras em ordem alfabética
       const nomesEsp = Object.keys(data.especialidades);
       const ordered = [];
 
@@ -654,13 +654,12 @@
         return;
       }
 
-      // Ordenar: estourado primeiro, depois cor (LARANJA, AMARELO, VERDE, AZUL), depois tempo desc
       const ordemCor = { "LARANJA": 0, "AMARELO": 1, "VERDE": 2, "AZUL": 3 };
 
       const ordenados = [...pacientes].sort((a, b) => {
         const ea = a.estourado ? 1 : 0;
         const eb = b.estourado ? 1 : 0;
-        if (ea !== eb) return eb - ea; // estourado (1) antes de não estourado (0)
+        if (ea !== eb) return eb - ea;
 
         const sa = ordemCor[a.cor] ?? 99;
         const sb = ordemCor[b.cor] ?? 99;
@@ -668,7 +667,7 @@
 
         const ta = a.espera_min || 0;
         const tb = b.espera_min || 0;
-        return tb - ta; // maior tempo primeiro
+        return tb - ta;
       });
 
       ordenados.forEach(p => {
@@ -724,7 +723,6 @@
     }
 
     function applyData(data) {
-      // Atualiza hora
       const lastUpdateEl = document.getElementById("last-update");
       const stamp = data.gerado_em || "";
       if (stamp) {
