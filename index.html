@@ -71,7 +71,6 @@
       font-weight: 600;
     }
 
-    /* Layout principal: esquerda (classificação + especialidades) / direita (críticos) */
     main.dashboard {
       margin-top: 22px;
       display: grid;
@@ -125,7 +124,6 @@
       background: rgba(21, 128, 61, 0.05);
     }
 
-    /* Quadrados grandes (classificação + totais) */
     .stat-row {
       display: flex;
       flex-wrap: wrap;
@@ -162,7 +160,6 @@
       color: var(--text-muted);
     }
 
-    /* Especialidades: linha com quadrados coloridos */
     .esp-block {
       display: flex;
       flex-direction: column;
@@ -242,7 +239,6 @@
       background: linear-gradient(to bottom right, #9ca3af, #4b5563);
     }
 
-    /* Resumo de críticos (direita topo) */
     #criticos-resumo {
       margin-top: 4px;
       display: flex;
@@ -277,7 +273,6 @@
       font-size: 0.78rem;
     }
 
-    /* Lista de críticos (direita baixo) */
     #criticos-lista {
       list-style: none;
       padding: 0;
@@ -524,7 +519,7 @@
             <div>
               <div class="card-title">Pacientes em tempo crítico</div>
               <div class="card-subtitle">
-                Lista em ordem do maior tempo de espera para menor.
+                Lista em ordem da cor (Manchester) e do maior tempo de espera para menor.
               </div>
             </div>
           </div>
@@ -584,7 +579,7 @@
         const prefix = cfg.prefix;
 
         const por_cor = esp.por_cor || {};
-        const max_por_cor = esp.max_espera_min_por_cor || {};
+        const max_por_cor = esp.max_espera_por_cor || {};
 
         // Total da especialidade
         const totalQtdEl = document.getElementById(`${prefix}-total-qtd`);
@@ -604,8 +599,27 @@
         });
       }
 
-      // Pacientes críticos
-      const criticos = data.pacientes_criticos || [];
+      // ===== Pacientes críticos =====
+      const corPriority = {
+        "LARANJA": 1,
+        "AMARELO": 2,
+        "VERDE": 3,
+        "AZUL": 4
+      };
+
+      const criticosRaw = data.pacientes_criticos || [];
+
+      // Ordena: cor Manchester primeiro, depois maior tempo
+      const criticos = [...criticosRaw].sort((a, b) => {
+        const pa = corPriority[a.cor] || 99;
+        const pb = corPriority[b.cor] || 99;
+        if (pa !== pb) return pa - pb;
+
+        const ta = a.espera_min || 0;
+        const tb = b.espera_min || 0;
+        return tb - ta; // maior tempo primeiro
+      });
+
       const resumoPorCor = {};
       CORES.forEach((c) => {
         resumoPorCor[c] = { total: 0, porEsp: {} };
