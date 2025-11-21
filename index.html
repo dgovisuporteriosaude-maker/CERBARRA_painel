@@ -29,7 +29,7 @@
       padding: 16px;
     }
     .app {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
     }
     header {
@@ -58,10 +58,10 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.5fr) minmax(0, 2fr);
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
       gap: 16px;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       .grid {
         grid-template-columns: minmax(0, 1fr);
       }
@@ -69,23 +69,29 @@
     .card {
       background: linear-gradient(135deg, var(--bg-card), var(--bg-card-alt));
       border-radius: 16px;
-      padding: 14px 16px;
+      padding: 12px 14px;
       border: 1px solid #111827;
       box-shadow: var(--shadow-soft);
     }
-    .card-header {
+    .linha {
+      margin-bottom: 10px;
+    }
+    .linha:last-child {
+      margin-bottom: 0;
+    }
+    .linha-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 10px;
-      gap: 4px;
+      gap: 8px;
+      margin-bottom: 6px;
     }
-    .card-title {
-      font-size: 1.05rem;
+    .linha-title {
+      font-size: 1.02rem;
       font-weight: 600;
       letter-spacing: 0.02em;
     }
-    .card-subtitle {
+    .linha-subtitle {
       font-size: 0.8rem;
       color: var(--text-muted);
     }
@@ -105,93 +111,175 @@
       border-radius: 999px;
       background: var(--accent);
     }
-    .valor-grande {
-      font-size: 1.8rem;
-      font-weight: 700;
+    .col-esq {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    .valor-label {
+    .col-dir {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* Quadrados de classificação */
+    .quadros-classificacao {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .quadro-cinza {
+      background: #020617;
+      border: 1px solid #4b5563;
+      border-radius: 12px;
+      padding: 6px 10px;
+      min-width: 110px;
+    }
+    .q-label {
       font-size: 0.8rem;
       color: var(--text-muted);
     }
-    .kpi-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 4px;
+    .q-valor {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
-    .kpi-label {
-      font-size: 0.85rem;
+    .q-sub {
+      font-size: 0.78rem;
       color: var(--text-muted);
     }
-    .kpi-value {
-      font-size: 0.92rem;
-      font-weight: 500;
+
+    /* Especialidades: pares cor + total cinza */
+    .esp-cor-pairs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
     }
-    .badge-cor {
+    .cor-pair {
       display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 56px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      border: 1px solid transparent;
-      text-transform: uppercase;
+      align-items: stretch;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #111827;
     }
+    .cor-box {
+      padding: 6px 10px;
+      min-width: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cor-box-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.9;
+    }
+    .cor-box-main {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .cor-box-sub {
+      font-size: 0.75rem;
+    }
+    .total-box {
+      background: #020617;
+      border-left: 1px solid #111827;
+      padding: 6px 10px;
+      min-width: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+    }
+    .total-box-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .total-box-main {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
     .cor-AZUL {
       background: #1d4ed833;
-      border-color: #3b82f6aa;
       color: #bfdbfe;
     }
     .cor-VERDE {
       background: #16653433;
-      border-color: #22c55eaa;
       color: #bbf7d0;
     }
     .cor-AMARELO {
       background: #854d0e33;
-      border-color: #facc15dd;
       color: #fef9c3;
     }
     .cor-LARANJA {
       background: #9a341233;
-      border-color: #fb923cff;
       color: #fed7aa;
     }
-    .cor-row {
+
+    .esp-max-tempos {
+      margin-top: 6px;
+      border-top: 1px dashed #111827;
+      padding-top: 4px;
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .esp-max-item {
+      display: flex;
+      gap: 4px;
+      align-items: baseline;
+    }
+    .esp-max-label {
+      font-weight: 500;
+    }
+
+    /* Coluna direita: resumo + lista de críticos */
+    .resumo-criticos {
+      border-color: #4b5563;
+    }
+    .resumo-criticos-header {
+      display: flex;
       justify-content: space-between;
-      gap: 8px;
-      padding: 6px 8px;
-      border-radius: 10px;
-      border: 1px solid #111827;
-      background: #020617dd;
-      margin-bottom: 4px;
+      align-items: baseline;
+      margin-bottom: 6px;
     }
-    .cor-row-main {
+    .resumo-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .resumo-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .resumo-cores {
       display: flex;
-      align-items: center;
-      gap: 8px;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
     }
-    .cor-totais {
-      font-size: 0.86rem;
-    }
-    .critico-badge {
+    .resumo-cor-pill {
       font-size: 0.75rem;
       padding: 2px 8px;
       border-radius: 999px;
-      border: 1px solid #f97316aa;
-      color: #fed7aa;
-      background: #9a341233;
+      border: 1px solid #4b5563;
+      background: #020617ee;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
-    .critico-zero {
-      opacity: 0.5;
-      border-style: dashed;
+    .resumo-cor-pill span.count {
+      font-weight: 600;
     }
+    .resumo-esps {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
     .card-critical {
       border-color: #f97316aa;
       box-shadow: 0 0 0 1px #fb923c55, var(--shadow-soft);
@@ -200,11 +288,73 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.25; }
     }
-    .critical {
-      animation: blink 1.2s infinite;
+    .critical-blink {
+      animation: blink 1.1s infinite;
     }
+
+    /* Lista pacientes críticos */
+    .crit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+    .crit-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .crit-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .crit-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 420px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .crit-item {
+      border-radius: 10px;
+      border: 1px solid #111827;
+      background: #020617ee;
+      padding: 6px 8px;
+      font-size: 0.82rem;
+    }
+    .crit-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+    .crit-ident {
+      font-weight: 600;
+    }
+    .crit-cor-badge {
+      font-size: 0.72rem;
+      padding: 2px 6px;
+      border-radius: 999px;
+      border: 1px solid #111827;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .crit-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+    .crit-tempo {
+      font-size: 0.8rem;
+    }
+    .crit-estourado {
+      color: #fed7aa;
+      font-size: 0.78rem;
+    }
+
     footer {
-      margin-top: 16px;
+      margin-top: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -228,54 +378,106 @@
         <span class="tag">CERBARRA · Emergência</span>
       </div>
       <p class="sub">
-        Dados extraídos automaticamente do TiMed (fila de espera atual). Pacientes de <strong>retorno</strong> não entram nas metas.
+        Fila atual do TiMed. Pacientes de <strong>retorno</strong> não entram nas metas;
+        cores só contam após classificação de risco.
       </p>
     </header>
 
     <div class="grid">
-      <!-- Fila de classificação -->
-      <section class="card">
-        <div class="card-header">
-          <div>
-            <div class="card-title">Fila da Classificação de Risco</div>
-            <div class="card-subtitle">Pacientes aguardando triagem / classificação</div>
+      <!-- COLUNA ESQUERDA: 3 LINHAS (CLASSIF / CLÍNICA / PEDIATRIA) -->
+      <section class="col-esq">
+        <!-- Linha: CLASSIFICAÇÃO -->
+        <article class="card linha" id="linha-classificacao">
+          <div class="linha-header">
+            <div>
+              <div class="linha-title">Classificação de Risco</div>
+              <div class="linha-subtitle">
+                Pacientes aguardando triagem / classificação.
+              </div>
+            </div>
+            <div class="pill">
+              <span class="pill-dot"></span>
+              Tempo desde a chegada
+            </div>
           </div>
-          <div class="pill">
-            <span class="pill-dot"></span>
-            Tempo desde a chegada
+          <div class="quadros-classificacao">
+            <div class="quadro-cinza">
+              <div class="q-label">Fila de classificação</div>
+              <div class="q-valor" id="fc-quantidade">--</div>
+              <div class="q-sub">pacientes</div>
+            </div>
+            <div class="quadro-cinza">
+              <div class="q-label">Maior tempo em espera</div>
+              <div class="q-valor" id="fc-max-tempo">--</div>
+              <div class="q-sub">considerando apenas fila de classificação</div>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="kpi-row" style="margin-bottom: 10px;">
-          <div>
-            <div class="valor-grande" id="fc-quantidade">--</div>
-            <div class="valor-label">pacientes aguardando classificação</div>
-          </div>
-          <div style="text-align: right;">
-            <div class="valor-grande" style="font-size: 1.1rem;" id="fc-max-tempo">--</div>
-            <div class="valor-label">maior tempo em espera</div>
-          </div>
-        </div>
+        <!-- Linha: CLÍNICA MÉDICA -->
+        <article class="card linha" id="esp-CLINICA_MEDICA" data-esp="CLINICA MEDICA">
+          <!-- Conteúdo será montado via JS -->
+        </article>
 
-        <p class="card-subtitle">
-          Inclui apenas pacientes ainda <strong>não classificados</strong> ou marcados como triagem, sem retorno.
-        </p>
+        <!-- Linha: PEDIATRIA -->
+        <article class="card linha" id="esp-PEDIATRIA" data-esp="PEDIATRIA">
+          <!-- Conteúdo será montado via JS -->
+        </article>
       </section>
 
-      <!-- Especialidades -->
-      <section id="esp-cards"></section>
+      <!-- COLUNA DIREITA: RESUMO + LISTA DE CRÍTICOS -->
+      <section class="col-dir">
+        <article class="card resumo-criticos" id="resumo-criticos">
+          <div class="resumo-criticos-header">
+            <div>
+              <div class="resumo-title">Resumo de pacientes críticos</div>
+              <div class="resumo-sub">
+                Pacientes em janela crítica ou com tempo estourado, por cor e especialidade.
+              </div>
+            </div>
+          </div>
+          <div class="resumo-cores" id="resumo-cores"></div>
+          <div class="resumo-esps" id="resumo-esps"></div>
+        </article>
+
+        <article class="card card-critical" id="card-lista-criticos">
+          <div class="crit-header">
+            <div>
+              <div class="crit-title">Pacientes em tempo crítico</div>
+              <div class="crit-sub">
+                Lista em ordem do maior tempo de espera para menor.
+              </div>
+            </div>
+          </div>
+          <div class="crit-list" id="lista-criticos-body">
+            <!-- Itens via JS -->
+          </div>
+        </article>
+      </section>
     </div>
 
     <div id="erro"></div>
 
     <footer>
       <div>Atualizado em: <span id="atualizado-em">--</span></div>
-      <div>Atualização automática a partir do JSON do repositório.</div>
+      <div>Dados gerados automaticamente pelo RPA da fila.</div>
     </footer>
   </div>
 
   <script>
     const CORES = ["LARANJA", "AMARELO", "VERDE", "AZUL"];
+
+    const LABELS_COR = {
+      "LARANJA": "Laranja",
+      "AMARELO": "Amarelo",
+      "VERDE": "Verde",
+      "AZUL": "Azul",
+    };
+
+    const LABELS_ESP = {
+      "CLINICA MEDICA": "Clínica Médica",
+      "PEDIATRIA": "Pediatria",
+    };
 
     function formatMinutos(min) {
       if (!min || min <= 0) return "0 min";
@@ -286,100 +488,178 @@
       return h + " h " + m + " min";
     }
 
-    function renderPainel(data) {
-      // Fila de classificação
-      const fc = data.fila_classificacao || {};
-      document.getElementById("fc-quantidade").textContent =
-        typeof fc.quantidade === "number" ? fc.quantidade : "--";
-      document.getElementById("fc-max-tempo").textContent =
-        typeof fc.tempo_max_espera_min === "number"
-          ? formatMinutos(fc.tempo_max_espera_min)
-          : "--";
+    function renderClassificacao(filaClassificacao) {
+      const fc = filaClassificacao || {};
+      const qtd = typeof fc.quantidade === "number" ? fc.quantidade : 0;
+      const maxMin = typeof fc.tempo_max_espera_min === "number" ? fc.tempo_max_espera_min : 0;
+      document.getElementById("fc-quantidade").textContent = qtd;
+      document.getElementById("fc-max-tempo").textContent = formatMinutos(maxMin);
+    }
 
-      // Especialidades
-      const espContainer = document.getElementById("esp-cards");
-      espContainer.innerHTML = "";
+    function renderEspecialidades(esps) {
+      const espElems = document.querySelectorAll("[data-esp]");
+      espElems.forEach((el) => {
+        const espKey = el.dataset.esp;
+        const info = esps && esps[espKey] ? esps[espKey] : {};
 
-      const especialidades = data.especialidades || {};
-      Object.entries(especialidades).forEach(([nome, info]) => {
+        const nomeAmigavel = LABELS_ESP[espKey] || espKey;
+        const totalFila = info.total_fila ?? 0;
+        const maxEsp = info.tempo_max_espera_min ?? 0;
         const porCor = info.por_cor || {};
         const criticosPorCor = info.criticos_por_cor || {};
+        const maxPorCor = info.max_espera_min_por_cor || {};
 
-        const hasCritical = Object.values(criticosPorCor).some(v => (v || 0) > 0);
+        let paresHtml = "";
+        let maxHtml = "";
 
-        let linhasCorHtml = "";
-        CORES.forEach(cor => {
-          const totalCor = porCor[cor] || 0;
-          const criticos = criticosPorCor[cor] || 0;
+        CORES.forEach((cor) => {
+          const labelCor = LABELS_COR[cor] || cor;
+          const qtd = porCor[cor] ?? 0;
+          const crit = criticosPorCor[cor] ?? 0;
+          // se não vier max por cor, usa o máx da especialidade
+          const maxCorMin = maxPorCor[cor] ?? maxEsp ?? 0;
 
-          const rowClass = criticos > 0 ? "cor-row critical" : "cor-row";
-          const criticoBadge =
-            criticos > 0
-              ? `<span class="critico-badge">Críticos / limite: ${criticos}</span>`
-              : `<span class="critico-badge critico-zero">Sem pacientes em tempo crítico</span>`;
-
-          linhasCorHtml += `
-            <div class="${rowClass}">
-              <div class="cor-row-main">
-                <span class="badge-cor cor-${cor}">${cor}</span>
-                <span class="cor-totais">Total: <strong>${totalCor}</strong></span>
+          paresHtml += `
+            <div class="cor-pair">
+              <div class="cor-box cor-${cor}">
+                <div class="cor-box-label">${labelCor}</div>
+                <div class="cor-box-main">${qtd}</div>
+                <div class="cor-box-sub">em fila</div>
               </div>
-              ${criticoBadge}
+              <div class="total-box">
+                <div class="total-box-label">Críticos</div>
+                <div class="total-box-main">${crit}</div>
+              </div>
+            </div>
+          `;
+
+          maxHtml += `
+            <div class="esp-max-item">
+              <span class="esp-max-label">${labelCor}:</span>
+              <span class="esp-max-value">${formatMinutos(maxCorMin)}</span>
             </div>
           `;
         });
 
-        const cardClass = hasCritical ? "card card-critical" : "card";
-
-        espContainer.innerHTML += `
-          <article class="${cardClass}">
-            <div class="card-header">
-              <div>
-                <div class="card-title">${nome}</div>
-                <div class="card-subtitle">
-                  Soma apenas pacientes <strong>classificados</strong> (com cor) e sem retorno.
-                </div>
-              </div>
-              <div style="text-align: right;">
-                <div class="valor-grande" style="font-size: 1.4rem;">${info.total_fila ?? 0}</div>
-                <div class="valor-label">em fila de atendimento</div>
-                <div class="card-subtitle" style="margin-top: 2px;">
-                  Máx: ${formatMinutos(info.tempo_max_espera_min || 0)}
-                </div>
+        el.innerHTML = `
+          <div class="linha-header">
+            <div>
+              <div class="linha-title">${nomeAmigavel}</div>
+              <div class="linha-subtitle">
+                Apenas pacientes classificados (com cor) e sem retorno.
               </div>
             </div>
-            ${linhasCorHtml}
-          </article>
+            <div style="text-align:right;">
+              <div style="font-size:1.35rem;font-weight:700;">${totalFila}</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">em fila de atendimento</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:2px;">
+                Máx. especialidade: ${formatMinutos(maxEsp)}
+              </div>
+            </div>
+          </div>
+          <div class="esp-cor-pairs">
+            ${paresHtml}
+          </div>
+          <div class="esp-max-tempos">
+            ${maxHtml}
+          </div>
         `;
       });
-
-      // Rodapé
-      document.getElementById("atualizado-em").textContent =
-        data.gerado_em || "--";
     }
 
-    async function carregarPainel() {
-      const erroEl = document.getElementById("erro");
-      erroEl.textContent = "";
-      try {
-        const resp = await fetch("data/data_fila.json?ts=" + Date.now());
-        if (!resp.ok) {
-          throw new Error("HTTP " + resp.status);
-        }
-        const data = await resp.json();
-        renderPainel(data);
-      } catch (err) {
-        console.error(err);
-        erroEl.textContent =
-          "Erro ao carregar dados da fila. Verifique se o JSON foi gerado pelo RPA.";
+    function renderResumoCriticos(esps) {
+      const resumoCoresEl = document.getElementById("resumo-cores");
+      const resumoEspsEl = document.getElementById("resumo-esps");
+      const cardResumo = document.getElementById("resumo-criticos");
+
+      const totaisCor = { LARANJA: 0, AMARELO: 0, VERDE: 0, AZUL: 0 };
+      const totaisEsp = {};
+
+      if (esps) {
+        Object.entries(esps).forEach(([espKey, info]) => {
+          const criticosPorCor = info.criticos_por_cor || {};
+          let somaEsp = 0;
+          CORES.forEach((cor) => {
+            const val = criticosPorCor[cor] ?? 0;
+            somaEsp += val;
+            totaisCor[cor] += val;
+          });
+          totaisEsp[espKey] = somaEsp;
+        });
+      }
+
+      const totalCriticosGeral = Object.values(totaisCor).reduce((a, b) => a + b, 0);
+
+      // Pílulas por cor
+      let pillHtml = "";
+      CORES.forEach((cor) => {
+        const labelCor = LABELS_COR[cor] || cor;
+        const totalCor = totaisCor[cor] ?? 0;
+        pillHtml += `
+          <div class="resumo-cor-pill">
+            <span>${labelCor}</span>
+            <span class="count">${totalCor}</span>
+          </div>
+        `;
+      });
+      resumoCoresEl.innerHTML = pillHtml;
+
+      // Resumo por especialidade
+      const linhasEsp = Object.entries(totaisEsp).map(([espKey, val]) => {
+        const nome = LABELS_ESP[espKey] || espKey;
+        return `${nome}: ${val}`;
+      });
+      resumoEspsEl.textContent =
+        linhasEsp.length > 0
+          ? `Críticos por especialidade — ${linhasEsp.join(" · ")}`
+          : "Sem pacientes em tempo crítico nas especialidades monitoradas.";
+
+      if (totalCriticosGeral > 0) {
+        cardResumo.classList.add("card-critical", "critical-blink");
+      } else {
+        cardResumo.classList.remove("card-critical", "critical-blink");
       }
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      carregarPainel();
-      // Recarrega periodicamente para pegar novas atualizações do JSON
-      setInterval(carregarPainel, 60000);
-    });
-  </script>
-</body>
-</html>
+    function renderListaCriticos(pacientesCriticos) {
+      const body = document.getElementById("lista-criticos-body");
+      const cardLista = document.getElementById("card-lista-criticos");
+
+      if (!pacientesCriticos || pacientesCriticos.length === 0) {
+        body.innerHTML = `
+          <div style="font-size:0.8rem;color:var(--text-muted);">
+            Nenhum paciente em tempo crítico no momento.
+          </div>
+        `;
+        cardLista.classList.remove("critical-blink");
+        return;
+      }
+
+      const itensHtml = pacientesCriticos.map((p) => {
+        const cor = p.cor || "";
+        const corLabel = LABELS_COR[cor] || cor;
+        const espKey = p.especialidade || "";
+        const espNome = LABELS_ESP[espKey] || espKey;
+        const tempoMin = p.espera_min ?? 0;
+        const tempoStr = p.tempo_str || formatMinutos(tempoMin);
+        const sla = p.sla_min ?? 0;
+        const estourado = !!p.estourado;
+
+        const corClass = cor ? `cor-${cor}` : "";
+        const estouradoText = estourado
+          ? `<span class="crit-estourado">⚠ Estourou o limite (${formatMinutos(sla)})</span>`
+          : `<span class="crit-estourado">⏳ Janela crítica (limite ${formatMinutos(sla)})</span>`;
+
+        return `
+          <div class="crit-item">
+            <div class="crit-top">
+              <div class="crit-ident">
+                BAE ${p.boletim || "--"} · ${p.paciente || "Paciente sem nome"}
+              </div>
+              <span class="crit-cor-badge ${corClass}">${corLabel}</span>
+            </div>
+            <div class="crit-meta">
+              ${espNome}${p.secao ? " · " + p.secao : ""}
+            </div>
+            <div class="crit-tempo">
+              Tempo de espera: <strong>${tempoStr}</strong> (${tempoMin} mi
