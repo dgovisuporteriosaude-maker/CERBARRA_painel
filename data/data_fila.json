@@ -1,41 +1,550 @@
 {
-  "gerado_em": "2025-11-21 19:01:28",
+  "gerado_em": "2025-11-21 19:07:02",
   "fila_classificacao": {
-    "quantidade": 2,
-    "tempo_max_espera_min": 15
+    "quantidade": 0,
+    "tempo_max_espera_min": 0
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 55,
-      "tempo_max_espera_min": 223,
+      "total_fila": 54,
+      "tempo_max_espera_min": 228,
       "por_cor": {
-        "AZUL": 2,
+        "LARANJA": 0,
+        "AMARELO": 10,
         "VERDE": 42,
-        "AMARELO": 11,
-        "LARANJA": 0
+        "AZUL": 2
       },
       "criticos_por_cor": {
-        "AZUL": 0,
+        "LARANJA": 0,
+        "AMARELO": 9,
         "VERDE": 36,
-        "AMARELO": 10,
-        "LARANJA": 0
+        "AZUL": 0
+      },
+      "max_espera_min_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 165,
+        "VERDE": 228,
+        "AZUL": 54
       }
     },
     "PEDIATRIA": {
-      "total_fila": 0,
-      "tempo_max_espera_min": 0,
+      "total_fila": 1,
+      "tempo_max_espera_min": 1,
       "por_cor": {
-        "AZUL": 0,
-        "VERDE": 0,
+        "LARANJA": 0,
         "AMARELO": 0,
-        "LARANJA": 0
+        "VERDE": 1,
+        "AZUL": 0
       },
       "criticos_por_cor": {
-        "AZUL": 0,
-        "VERDE": 0,
+        "LARANJA": 0,
         "AMARELO": 0,
-        "LARANJA": 0
+        "VERDE": 0,
+        "AZUL": 0
+      },
+      "max_espera_min_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 0,
+        "VERDE": 1,
+        "AZUL": 0
       }
     }
-  }
+  },
+  "pacientes_criticos": [
+    {
+      "boletim": "1736835",
+      "paciente": "NATHAN VITOR DA SILVA VALERIANO DA MATTA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 228,
+      "tempo_str": "3:48",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736842",
+      "paciente": "LUCAS DOS SANTO GONZAGA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 205,
+      "tempo_str": "3:25",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736847",
+      "paciente": "FRANCISCA FABIANA BRAGA CLAUDINO MESQUITA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 195,
+      "tempo_str": "3:15",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736849",
+      "paciente": "SEBASTIAO DA SILVA LISBOA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 192,
+      "tempo_str": "3:12",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736851",
+      "paciente": "SORAYA MARIA UCHOA CAVALCANTI DE ARAUJO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 188,
+      "tempo_str": "3:8",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736853",
+      "paciente": "MARIA EDUARDA PIMENTEL FROES",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 187,
+      "tempo_str": "3:7",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736854",
+      "paciente": "MATHEUS BATISTA VIEIRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 182,
+      "tempo_str": "3:2",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736857",
+      "paciente": "ANA CAROLINE DE BRITO BARBOSA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 179,
+      "tempo_str": "2:59",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736861",
+      "paciente": "ANTONIO PEDRO DE OLIVEIRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 173,
+      "tempo_str": "2:53",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736860",
+      "paciente": "NAIZA CRISTINA SOBRAL VELOSO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 172,
+      "tempo_str": "2:52",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736862",
+      "paciente": "MARISE FONSECA DOS SANTOS",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 165,
+      "tempo_str": "2:45",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736864",
+      "paciente": "PRISCILA KARLA PEREIRA DOS SANTOS",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 164,
+      "tempo_str": "2:44",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736865",
+      "paciente": "MARIA IVONETE ARAUJO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 158,
+      "tempo_str": "2:38",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736866",
+      "paciente": "CLAUDIA ALEXANDRE DA SILVA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 158,
+      "tempo_str": "2:38",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736867",
+      "paciente": "JOSE LEONILDO GOMES BEZERRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 153,
+      "tempo_str": "2:33",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736872",
+      "paciente": "ANDREA PAULA COUTO MATTOSO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 130,
+      "tempo_str": "2:10",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736874",
+      "paciente": "RAFAELA PAZ DE SOUZA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 127,
+      "tempo_str": "2:7",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736878",
+      "paciente": "LUCIANO PEREIRA DOS SANTOS FILHO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "Page of",
+      "cor": "VERDE",
+      "espera_min": 124,
+      "tempo_str": "2:4",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736881",
+      "paciente": "SIDMEIA MARIA DO ESPIRITO SANTO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 118,
+      "tempo_str": "1:58",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736883",
+      "paciente": "JULIANO DE ARAUJO LIMA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 116,
+      "tempo_str": "1:56",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736887",
+      "paciente": "RENATA DA SILVA SOUZA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 110,
+      "tempo_str": "1:50",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736886",
+      "paciente": "GILMARA RODRIGUES DE MACEDO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 109,
+      "tempo_str": "1:49",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736888",
+      "paciente": "JOSE FLAVIO DA SILVA COSTA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 107,
+      "tempo_str": "1:47",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736889",
+      "paciente": "RAIANE PAULINO DE OLIVEIRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 105,
+      "tempo_str": "1:45",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736890",
+      "paciente": "ROSIANE FERNADES QUINTILIANO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 105,
+      "tempo_str": "1:45",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736901",
+      "paciente": "MYLENA MEDEIROS FERREIRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 100,
+      "tempo_str": "1:40",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736905",
+      "paciente": "ROSILENE SANTOS DA SILVA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 98,
+      "tempo_str": "1:38",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736907",
+      "paciente": "FRANCISCO DE ASSIS OLIVEIRA COSTA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 92,
+      "tempo_str": "1:32",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736910",
+      "paciente": "MARIANA DE OLIVEIRA DE FIGUEIREDO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 82,
+      "tempo_str": "1:22",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736911",
+      "paciente": "WILLIAM DE AQUINO ALVES",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 79,
+      "tempo_str": "1:19",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736917",
+      "paciente": "LUCIANA ALVARISTO DOS SANTOS PAULA SOARES",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 76,
+      "tempo_str": "1:16",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736912",
+      "paciente": "SAMANTHA ARAUJO DE SOUZA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 75,
+      "tempo_str": "1:15",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736914",
+      "paciente": "MARCILENE DE MEDEIROS",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 73,
+      "tempo_str": "1:13",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736915",
+      "paciente": "SOLANGE SOUSA DA CONCEICAO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 72,
+      "tempo_str": "1:12",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736919",
+      "paciente": "LUISA LAPA VIEIRA BARBATO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "Page of",
+      "cor": "VERDE",
+      "espera_min": 68,
+      "tempo_str": "1:8",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736920",
+      "paciente": "LAILA CONCEICAO SOARES MENDES",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 67,
+      "tempo_str": "1:7",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736921",
+      "paciente": "SELMA KAWASHIMA KARL DA SILVA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 66,
+      "tempo_str": "1:6",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736922",
+      "paciente": "JULYA RABELLO DA SILVA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 61,
+      "tempo_str": "1:1",
+      "sla_min": 60,
+      "estourado": true
+    },
+    {
+      "boletim": "1736923",
+      "paciente": "JOSE OSMAR DO NASCIMENTO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 59,
+      "tempo_str": "0:59",
+      "sla_min": 60,
+      "estourado": false
+    },
+    {
+      "boletim": "1736925",
+      "paciente": "TAYANE CARVALHO MOREIRA OLIVEIRA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 57,
+      "tempo_str": "0:57",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736924",
+      "paciente": "ANDRE CARVALHO GARCIA PINTO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "VERDE",
+      "espera_min": 56,
+      "tempo_str": "0:56",
+      "sla_min": 60,
+      "estourado": false
+    },
+    {
+      "boletim": "1736928",
+      "paciente": "MARIA DO CARMO FAUSTINO DA SILVA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 47,
+      "tempo_str": "0:47",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736929",
+      "paciente": "JARBAS ELCIO DE SANT ANNA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 46,
+      "tempo_str": "0:46",
+      "sla_min": 30,
+      "estourado": true
+    },
+    {
+      "boletim": "1736933",
+      "paciente": "WALTER CLIMERIO DE SOUZA",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 28,
+      "tempo_str": "0:28",
+      "sla_min": 30,
+      "estourado": false
+    },
+    {
+      "boletim": "1736934",
+      "paciente": "JOSE DIAS FILHO",
+      "especialidade": "CLINICA MEDICA",
+      "secao": "CONSULTÓRIOS",
+      "cor": "AMARELO",
+      "espera_min": 25,
+      "tempo_str": "0:25",
+      "sla_min": 30,
+      "estourado": false
+    }
+  ]
 }
