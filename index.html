@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
-      --bg-main: #020617;
-      --bg-card: #020617;
-      --bg-card-soft: #020617;
-      --border-card: #1e293b;
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
+      --bg-main: #ffffff;
+      --bg-card: #f9fafb;
+      --bg-card-soft: #f3f4f6;
+      --border-card: #e5e7eb;
+      --text-main: #111827;
+      --text-muted: #6b7280;
 
       --cor-laranja: #f97316;
       --cor-amarelo: #eab308;
@@ -21,7 +21,7 @@
 
       --radius-xl: 20px;
       --radius-lg: 16px;
-      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.7);
+      --shadow-soft: 0 12px 24px rgba(15, 23, 42, 0.08);
     }
 
     * {
@@ -32,7 +32,7 @@
       margin: 0;
       min-height: 100vh;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #0f172a 0, #020617 45%, #000 100%);
+      background: var(--bg-main);
       color: var(--text-main);
     }
 
@@ -91,7 +91,7 @@
     }
 
     .card {
-      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.8), #020617);
+      background: var(--bg-card);
       border-radius: var(--radius-xl);
       border: 1px solid var(--border-card);
       padding: 18px 20px 18px;
@@ -120,7 +120,7 @@
       padding: 4px 10px;
       border-radius: 999px;
       border: 1px solid #22c55e;
-      color: #bbf7d0;
+      color: #166534;
       background: rgba(21, 128, 61, 0.05);
     }
 
@@ -135,8 +135,8 @@
       min-width: 140px;
       border-radius: var(--radius-lg);
       padding: 10px 14px 12px;
-      background: #020617;
-      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: var(--bg-card-soft);
+      border: 1px solid var(--border-card);
       display: flex;
       flex-direction: column;
       gap: 4px;
@@ -198,7 +198,7 @@
       flex-direction: column;
       gap: 2px;
       color: #f9fafb;
-      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.6);
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
     }
 
     .cor-label {
@@ -220,23 +220,24 @@
     }
 
     .cor-laranja {
-      background: linear-gradient(to bottom right, #fdba74, #f97316);
+      background: linear-gradient(to bottom right, #fed7aa, #f97316);
     }
 
     .cor-amarelo {
-      background: linear-gradient(to bottom right, #facc15, #ca8a04);
+      background: linear-gradient(to bottom right, #fef08a, #ca8a04);
+      color: #111827;
     }
 
     .cor-verde {
-      background: linear-gradient(to bottom right, #4ade80, #16a34a);
+      background: linear-gradient(to bottom right, #bbf7d0, #16a34a);
     }
 
     .cor-azul {
-      background: linear-gradient(to bottom right, #38bdf8, #0ea5e9);
+      background: linear-gradient(to bottom right, #bae6fd, #0ea5e9);
     }
 
     .cor-total {
-      background: linear-gradient(to bottom right, #9ca3af, #4b5563);
+      background: linear-gradient(to bottom right, #e5e7eb, #4b5563);
     }
 
     #criticos-resumo {
@@ -254,8 +255,8 @@
       font-size: 0.8rem;
       padding: 4px 8px;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(30, 64, 175, 0.7);
+      background: var(--bg-card-soft);
+      border: 1px solid var(--border-card);
     }
 
     .resumo-cor {
@@ -287,7 +288,7 @@
     .critico-item {
       border-radius: var(--radius-lg);
       padding: 8px 10px;
-      background: rgba(15, 23, 42, 0.9);
+      background: var(--bg-card-soft);
       border-left: 3px solid #4b5563;
       font-size: 0.83rem;
       display: flex;
@@ -319,12 +320,15 @@
       justify-content: space-between;
       font-size: 0.76rem;
       color: var(--text-muted);
+      align-items: center;
+      gap: 8px;
     }
 
     .critico-status {
       font-weight: 600;
     }
 
+    /* cores do filete lateral pela cor do paciente */
     .cor-tag-laranja {
       border-left-color: var(--cor-laranja);
     }
@@ -349,7 +353,7 @@
     footer {
       margin-top: 14px;
       padding-top: 10px;
-      border-top: 1px solid rgba(15, 23, 42, 0.9);
+      border-top: 1px solid var(--border-card);
       display: flex;
       justify-content: space-between;
       font-size: 0.8rem;
@@ -358,7 +362,47 @@
 
     #last-updated {
       font-weight: 600;
-      color: #e5e7eb;
+      color: var(--text-main);
+    }
+
+    /* Tags piscando para ESTOUROU META (vermelho) e CRÍTICO (amarelo) */
+    @keyframes pulse-estourado {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.35); }
+      70% { transform: scale(1.03); box-shadow: 0 0 0 8px rgba(185, 28, 28, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(185, 28, 28, 0); }
+    }
+
+    @keyframes pulse-critico {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.35); }
+      70% { transform: scale(1.03); box-shadow: 0 0 0 8px rgba(234, 179, 8, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
+    }
+
+    .status-tag {
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 700;
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    .status-estourado {
+      background-color: #fee2e2;
+      color: #b91c1c;
+      border-color: #fecaca;
+      animation: pulse-estourado 1s infinite;
+    }
+
+    .status-critico {
+      background-color: #fef3c7;
+      color: #b45309;
+      border-color: #fde68a;
+      animation: pulse-critico 1.5s infinite;
     }
 
     @media (max-width: 960px) {
@@ -427,7 +471,7 @@
               </div>
 
               <div class="cor-card cor-amarelo">
-                <div class="cor-label">Amarelo</div>
+                <class="cor-label">Amarelo</div>
                 <div class="cor-qtd" id="clinica_medica-amarelo-qtd">--</div>
                 <div class="cor-max" id="clinica_medica-amarelo-max">máx --</div>
               </div>
@@ -681,7 +725,9 @@
           const espCfg = ESPECIALIDADES_CONFIG[p.especialidade];
           const espLabel = espCfg ? espCfg.label : p.especialidade || "";
 
-          const statusTxt = p.estourado ? "ESTOUROU META" : "em janela crítica";
+          const statusHtml = p.estourado
+            ? '<span class="status-tag status-estourado">ESTOUROU META</span>'
+            : '<span class="status-tag status-critico">CRÍTICO</span>';
 
           li.innerHTML = `
             <div class="critico-top">
@@ -691,7 +737,7 @@
             <div class="critico-nome">${p.paciente || ""}</div>
             <div class="critico-bottom">
               <span class="critico-esp">${espLabel}</span>
-              <span class="critico-status">${statusTxt}</span>
+              <span class="critico-status">${statusHtml}</span>
             </div>
           `;
           listEl.appendChild(li);
