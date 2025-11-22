@@ -21,7 +21,7 @@
 
       --radius-xl: 20px;
       --radius-lg: 16px;
-      --shadow-soft: 0 12px 24px rgba(15, 23, 42, 0.08);
+      --shadow-soft: 0 12px 24px rgba(15, 23, 42, 0.12);
     }
 
     * {
@@ -121,7 +121,7 @@
       border-radius: 999px;
       border: 1px solid #22c55e;
       color: #166534;
-      background: rgba(21, 128, 61, 0.05);
+      background: rgba(21, 128, 61, 0.06);
     }
 
     .stat-row {
@@ -198,7 +198,7 @@
       flex-direction: column;
       gap: 2px;
       color: #f9fafb;
-      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.18);
     }
 
     .cor-label {
@@ -320,15 +320,12 @@
       justify-content: space-between;
       font-size: 0.76rem;
       color: var(--text-muted);
-      align-items: center;
-      gap: 8px;
     }
 
     .critico-status {
       font-weight: 600;
     }
 
-    /* cores do filete lateral pela cor do paciente */
     .cor-tag-laranja {
       border-left-color: var(--cor-laranja);
     }
@@ -365,16 +362,16 @@
       color: var(--text-main);
     }
 
-    /* Tags piscando para ESTOUROU META (vermelho) e CRÍTICO (amarelo) */
+    /* ===== Badges piscando para ESTOUROU META (vermelho) e CRÍTICO (amarelo) ===== */
     @keyframes pulse-estourado {
       0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.35); }
-      70% { transform: scale(1.03); box-shadow: 0 0 0 8px rgba(185, 28, 28, 0); }
+      70% { transform: scale(1.04); box-shadow: 0 0 0 10px rgba(185, 28, 28, 0); }
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(185, 28, 28, 0); }
     }
 
     @keyframes pulse-critico {
       0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.35); }
-      70% { transform: scale(1.03); box-shadow: 0 0 0 8px rgba(234, 179, 8, 0); }
+      70% { transform: scale(1.04); box-shadow: 0 0 0 10px rgba(234, 179, 8, 0); }
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
     }
 
@@ -389,6 +386,7 @@
       font-weight: 700;
       border-width: 1px;
       border-style: solid;
+      white-space: nowrap;
     }
 
     .status-estourado {
@@ -400,9 +398,9 @@
 
     .status-critico {
       background-color: #fef3c7;
-      color: #b45309;
+      color: #92400e;
       border-color: #fde68a;
-      animation: pulse-critico 1.5s infinite;
+      animation: pulse-critico 1.4s infinite;
     }
 
     @media (max-width: 960px) {
@@ -471,7 +469,7 @@
               </div>
 
               <div class="cor-card cor-amarelo">
-                <class="cor-label">Amarelo</div>
+                <div class="cor-label">Amarelo</div>
                 <div class="cor-qtd" id="clinica_medica-amarelo-qtd">--</div>
                 <div class="cor-max" id="clinica_medica-amarelo-max">máx --</div>
               </div>
