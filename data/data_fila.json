@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-21 20:21:31",
+  "gerado_em": "2025-11-21 21:04:41",
   "fila_classificacao": {
-    "quantidade": 12,
-    "tempo_max_espera_min": 40
+    "quantidade": 6,
+    "tempo_max_espera_min": 9
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 33,
-      "tempo_max_espera_min": 167,
+      "total_fila": 24,
+      "tempo_max_espera_min": 172,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 2,
-        "VERDE": 23,
-        "AZUL": 8
+        "AMARELO": 0,
+        "VERDE": 14,
+        "AZUL": 10
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 55,
-        "VERDE": 167,
-        "AZUL": 129
+        "AMARELO": 0,
+        "VERDE": 67,
+        "AZUL": 172
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
-        "VERDE": 14,
+        "AMARELO": 0,
+        "VERDE": 3,
         "AZUL": 0
       }
     },
@@ -53,137 +53,29 @@
   "pacientes_criticos": [
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736948",
-      "paciente": "VALDETE ALEMONGE PIRES",
-      "cor": "AMARELO",
-      "tempo_espera": "0:55",
-      "espera_min": 55,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736907",
-      "paciente": "FRANCISCO DE ASSIS OLIVEIRA COSTA",
+      "boletim": "1736962",
+      "paciente": "WESLEY DIEGO AMARAL",
       "cor": "VERDE",
-      "tempo_espera": "2:47",
-      "espera_min": 167,
+      "tempo_espera": "1:7",
+      "espera_min": 67,
       "estourado": true
     },
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736914",
-      "paciente": "MARCILENE DE MEDEIROS",
+      "boletim": "1736965",
+      "paciente": "LEILA DE OLIVEIRA BARBOSA",
       "cor": "VERDE",
-      "tempo_espera": "2:28",
-      "espera_min": 148,
+      "tempo_espera": "1:2",
+      "espera_min": 62,
       "estourado": true
     },
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736919",
-      "paciente": "LUISA LAPA VIEIRA BARBATO",
-      "cor": "VERDE",
-      "tempo_espera": "2:23",
-      "espera_min": 143,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736920",
-      "paciente": "LAILA CONCEICAO SOARES MENDES",
-      "cor": "VERDE",
-      "tempo_espera": "2:22",
-      "espera_min": 142,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736922",
-      "paciente": "JULYA RABELLO DA SILVA",
-      "cor": "VERDE",
-      "tempo_espera": "2:16",
-      "espera_min": 136,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736923",
-      "paciente": "JOSE OSMAR DO NASCIMENTO",
-      "cor": "VERDE",
-      "tempo_espera": "2:14",
-      "espera_min": 134,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736924",
-      "paciente": "ANDRE CARVALHO GARCIA PINTO",
-      "cor": "VERDE",
-      "tempo_espera": "2:11",
-      "espera_min": 131,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736931",
-      "paciente": "VIVIAN SANTANA FERREIRA",
-      "cor": "VERDE",
-      "tempo_espera": "1:59",
-      "espera_min": 119,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736937",
-      "paciente": "FELIPE DOS SANTOS COSTA",
-      "cor": "VERDE",
-      "tempo_espera": "1:35",
-      "espera_min": 95,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736938",
-      "paciente": "MONICA BATISTA DE LIMA",
-      "cor": "VERDE",
-      "tempo_espera": "1:32",
-      "espera_min": 92,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736940",
-      "paciente": "JULYA DA SILVA MARTINS DE PAULA",
-      "cor": "VERDE",
-      "tempo_espera": "1:25",
-      "espera_min": 85,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736944",
-      "paciente": "TAIANE FERREIRA MARQUES",
-      "cor": "VERDE",
-      "tempo_espera": "1:25",
-      "espera_min": 85,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736947",
-      "paciente": "JONATHAN JUAN SILVA COELHO",
+      "boletim": "1736967",
+      "paciente": "VANESSA CARLA ZERLIN",
       "cor": "VERDE",
       "tempo_espera": "0:59",
       "espera_min": 59,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736949",
-      "paciente": "NAILSON COSTA DA CONCEICAO",
-      "cor": "VERDE",
-      "tempo_espera": "0:53",
-      "espera_min": 53,
       "estourado": false
     }
   ]
