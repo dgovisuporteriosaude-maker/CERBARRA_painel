@@ -1,30 +1,30 @@
 {
-  "gerado_em": "2025-11-22 07:52:19",
+  "gerado_em": "2025-11-22 08:43:50",
   "fila_classificacao": {
-    "quantidade": 2,
-    "tempo_max_espera_min": 8
+    "quantidade": 8,
+    "tempo_max_espera_min": 11
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 11,
-      "tempo_max_espera_min": 263,
+      "total_fila": 13,
+      "tempo_max_espera_min": 120,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 1,
-        "VERDE": 6,
-        "AZUL": 4
+        "VERDE": 11,
+        "AZUL": 1
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 12,
-        "VERDE": 46,
-        "AZUL": 263
+        "AMARELO": 19,
+        "VERDE": 21,
+        "AZUL": 120
       },
       "criticos_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
         "VERDE": 0,
-        "AZUL": 1
+        "AZUL": 0
       }
     },
     "PEDIATRIA": {
@@ -50,15 +50,5 @@
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737092",
-      "paciente": "RENATO DE AMORIM BARBOSA FERREIRA",
-      "cor": "AZUL",
-      "tempo_espera": "4:23",
-      "espera_min": 263,
-      "estourado": true
-    }
-  ]
+  "pacientes_criticos": []
 }
