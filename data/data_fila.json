@@ -1,30 +1,30 @@
 {
-  "gerado_em": "2025-11-21 21:25:02",
+  "gerado_em": "2025-11-22 07:52:19",
   "fila_classificacao": {
-    "quantidade": 15,
-    "tempo_max_espera_min": 18
+    "quantidade": 2,
+    "tempo_max_espera_min": 8
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 19,
-      "tempo_max_espera_min": 146,
+      "total_fila": 11,
+      "tempo_max_espera_min": 263,
       "por_cor": {
-        "LARANJA": 1,
+        "LARANJA": 0,
         "AMARELO": 1,
-        "VERDE": 8,
-        "AZUL": 9
+        "VERDE": 6,
+        "AZUL": 4
       },
       "max_espera_por_cor": {
-        "LARANJA": 9,
-        "AMARELO": 5,
-        "VERDE": 53,
-        "AZUL": 146
+        "LARANJA": 0,
+        "AMARELO": 12,
+        "VERDE": 46,
+        "AZUL": 263
       },
       "criticos_por_cor": {
-        "LARANJA": 1,
+        "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 3,
-        "AZUL": 0
+        "VERDE": 0,
+        "AZUL": 1
       }
     },
     "PEDIATRIA": {
@@ -53,39 +53,12 @@
   "pacientes_criticos": [
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736993",
-      "paciente": "GILDETE SILVA SANTOS",
-      "cor": "LARANJA",
-      "tempo_espera": "0:9",
-      "espera_min": 9,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736979",
-      "paciente": "JAQUELINE ALVES CAVALCANTI GARCIA",
-      "cor": "VERDE",
-      "tempo_espera": "0:53",
-      "espera_min": 53,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736980",
-      "paciente": "MARYANA SOARES DA SILVA",
-      "cor": "VERDE",
-      "tempo_espera": "0:52",
-      "espera_min": 52,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736981",
-      "paciente": "THAIS LOPES DE ANDRADE",
-      "cor": "VERDE",
-      "tempo_espera": "0:50",
-      "espera_min": 50,
-      "estourado": false
+      "boletim": "1737092",
+      "paciente": "RENATO DE AMORIM BARBOSA FERREIRA",
+      "cor": "AZUL",
+      "tempo_espera": "4:23",
+      "espera_min": 263,
+      "estourado": true
     }
   ]
 }
