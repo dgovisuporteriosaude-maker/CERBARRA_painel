@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-21 21:04:41",
+  "gerado_em": "2025-11-21 21:15:19",
   "fila_classificacao": {
-    "quantidade": 6,
-    "tempo_max_espera_min": 9
+    "quantidade": 10,
+    "tempo_max_espera_min": 11
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 24,
-      "tempo_max_espera_min": 172,
+      "total_fila": 20,
+      "tempo_max_espera_min": 183,
       "por_cor": {
-        "LARANJA": 0,
+        "LARANJA": 1,
         "AMARELO": 0,
-        "VERDE": 14,
+        "VERDE": 9,
         "AZUL": 10
       },
       "max_espera_por_cor": {
-        "LARANJA": 0,
+        "LARANJA": 5,
         "AMARELO": 0,
-        "VERDE": 67,
-        "AZUL": 172
+        "VERDE": 44,
+        "AZUL": 183
       },
       "criticos_por_cor": {
-        "LARANJA": 0,
+        "LARANJA": 1,
         "AMARELO": 0,
-        "VERDE": 3,
+        "VERDE": 0,
         "AZUL": 0
       }
     },
@@ -53,29 +53,11 @@
   "pacientes_criticos": [
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736962",
-      "paciente": "WESLEY DIEGO AMARAL",
-      "cor": "VERDE",
-      "tempo_espera": "1:7",
-      "espera_min": 67,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736965",
-      "paciente": "LEILA DE OLIVEIRA BARBOSA",
-      "cor": "VERDE",
-      "tempo_espera": "1:2",
-      "espera_min": 62,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1736967",
-      "paciente": "VANESSA CARLA ZERLIN",
-      "cor": "VERDE",
-      "tempo_espera": "0:59",
-      "espera_min": 59,
+      "boletim": "1736991",
+      "paciente": "MARIA LUCIA COSTA SOUSA",
+      "cor": "LARANJA",
+      "tempo_espera": "0:5",
+      "espera_min": 5,
       "estourado": false
     }
   ]
