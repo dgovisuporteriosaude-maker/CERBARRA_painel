@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-21 21:15:19",
+  "gerado_em": "2025-11-21 21:25:02",
   "fila_classificacao": {
-    "quantidade": 10,
-    "tempo_max_espera_min": 11
+    "quantidade": 15,
+    "tempo_max_espera_min": 18
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 20,
-      "tempo_max_espera_min": 183,
+      "total_fila": 19,
+      "tempo_max_espera_min": 146,
       "por_cor": {
         "LARANJA": 1,
-        "AMARELO": 0,
-        "VERDE": 9,
-        "AZUL": 10
+        "AMARELO": 1,
+        "VERDE": 8,
+        "AZUL": 9
       },
       "max_espera_por_cor": {
-        "LARANJA": 5,
-        "AMARELO": 0,
-        "VERDE": 44,
-        "AZUL": 183
+        "LARANJA": 9,
+        "AMARELO": 5,
+        "VERDE": 53,
+        "AZUL": 146
       },
       "criticos_por_cor": {
         "LARANJA": 1,
         "AMARELO": 0,
-        "VERDE": 0,
+        "VERDE": 3,
         "AZUL": 0
       }
     },
@@ -53,11 +53,38 @@
   "pacientes_criticos": [
     {
       "especialidade": "CLINICA MEDICA",
-      "boletim": "1736991",
-      "paciente": "MARIA LUCIA COSTA SOUSA",
+      "boletim": "1736993",
+      "paciente": "GILDETE SILVA SANTOS",
       "cor": "LARANJA",
-      "tempo_espera": "0:5",
-      "espera_min": 5,
+      "tempo_espera": "0:9",
+      "espera_min": 9,
+      "estourado": false
+    },
+    {
+      "especialidade": "CLINICA MEDICA",
+      "boletim": "1736979",
+      "paciente": "JAQUELINE ALVES CAVALCANTI GARCIA",
+      "cor": "VERDE",
+      "tempo_espera": "0:53",
+      "espera_min": 53,
+      "estourado": false
+    },
+    {
+      "especialidade": "CLINICA MEDICA",
+      "boletim": "1736980",
+      "paciente": "MARYANA SOARES DA SILVA",
+      "cor": "VERDE",
+      "tempo_espera": "0:52",
+      "espera_min": 52,
+      "estourado": false
+    },
+    {
+      "especialidade": "CLINICA MEDICA",
+      "boletim": "1736981",
+      "paciente": "THAIS LOPES DE ANDRADE",
+      "cor": "VERDE",
+      "tempo_espera": "0:50",
+      "espera_min": 50,
       "estourado": false
     }
   ]
