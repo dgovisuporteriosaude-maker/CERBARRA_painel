@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-23 16:12:30",
+  "gerado_em": "2025-11-23 16:15:59",
   "fila_classificacao": {
     "quantidade": 4,
-    "tempo_max_espera_min": 20
+    "tempo_max_espera_min": 23
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 11,
-      "tempo_max_espera_min": 23,
+      "total_fila": 10,
+      "tempo_max_espera_min": 21,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 4,
-        "VERDE": 7,
-        "AZUL": 0
+        "AMARELO": 3,
+        "VERDE": 6,
+        "AZUL": 1
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
+        "AMARELO": 0,
         "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 21,
-        "VERDE": 23,
+        "AMARELO": 11,
+        "VERDE": 21,
         "AZUL": 0
       }
     },
@@ -50,18 +50,8 @@
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "boletim": "1737782",
-      "paciente": "ELIZABETH CUNHA FIGUEIREDO",
-      "tempo_espera": "0:21",
-      "espera_min": 21,
-      "cor": "AMARELO",
-      "especialidade": "CLINICA MEDICA",
-      "estourado": false
-    }
-  ],
-  "retorno_total": 22,
+  "pacientes_criticos": [],
+  "retorno_total": 23,
   "retorno_critico_total": 0,
   "pacientes_retorno_criticos": []
 }
