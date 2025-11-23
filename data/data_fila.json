@@ -1,30 +1,30 @@
 {
-  "gerado_em": "2025-11-22 14:42:58",
+  "gerado_em": "2025-11-23 10:04:18",
   "fila_classificacao": {
-    "quantidade": 8,
-    "tempo_max_espera_min": 8
+    "quantidade": 0,
+    "tempo_max_espera_min": 0
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 43,
-      "tempo_max_espera_min": 271,
+      "total_fila": 0,
+      "tempo_max_espera_min": 0,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 2,
-        "VERDE": 39,
-        "AZUL": 2
+        "AMARELO": 0,
+        "VERDE": 0,
+        "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 20,
-        "VERDE": 105,
-        "AZUL": 271
+        "AMARELO": 0,
+        "VERDE": 0,
+        "AZUL": 0
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
-        "VERDE": 23,
-        "AZUL": 1
+        "AMARELO": 0,
+        "VERDE": 0,
+        "AZUL": 0
       }
     },
     "PEDIATRIA": {
@@ -50,231 +50,5 @@
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737319",
-      "paciente": "VANESSA JOSE DA ROCHA DE OLIVEIRA",
-      "cor": "AMARELO",
-      "tempo_espera": "0:20",
-      "espera_min": 20,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737264",
-      "paciente": "ANDRE ALEXANDRE DO MONTE",
-      "cor": "VERDE",
-      "tempo_espera": "1:45",
-      "espera_min": 105,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737265",
-      "paciente": "DEBORAHSILVA DOS SANTOS",
-      "cor": "VERDE",
-      "tempo_espera": "1:45",
-      "espera_min": 105,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737269",
-      "paciente": "THAIS DOS SANTOS",
-      "cor": "VERDE",
-      "tempo_espera": "1:43",
-      "espera_min": 103,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737266",
-      "paciente": "ANDRE SIMAO PEREIRA",
-      "cor": "VERDE",
-      "tempo_espera": "1:42",
-      "espera_min": 102,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737268",
-      "paciente": "JESSICA REGINA DA SILVA MARQUES",
-      "cor": "VERDE",
-      "tempo_espera": "1:40",
-      "espera_min": 100,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737275",
-      "paciente": "ROBERTO SERGIO MOREIRA",
-      "cor": "VERDE",
-      "tempo_espera": "1:35",
-      "espera_min": 95,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737271",
-      "paciente": "SARAH DINIZ MONTEIRO",
-      "cor": "VERDE",
-      "tempo_espera": "1:34",
-      "espera_min": 94,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737272",
-      "paciente": "ANA CLARA RPODRIGUES PAULINO",
-      "cor": "VERDE",
-      "tempo_espera": "1:32",
-      "espera_min": 92,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737279",
-      "paciente": "ADRYELE GOMES DOS SANTOS",
-      "cor": "VERDE",
-      "tempo_espera": "1:25",
-      "espera_min": 85,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737282",
-      "paciente": "SIMONE GARCIA DA SILVA",
-      "cor": "VERDE",
-      "tempo_espera": "1:20",
-      "espera_min": 80,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737283",
-      "paciente": "ALDIR DE ARAUJO LOPES",
-      "cor": "VERDE",
-      "tempo_espera": "1:14",
-      "espera_min": 74,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737284",
-      "paciente": "ALEXIA TAVARES DIAS",
-      "cor": "VERDE",
-      "tempo_espera": "1:13",
-      "espera_min": 73,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737286",
-      "paciente": "MARCIO SANTOS SOUZA",
-      "cor": "VERDE",
-      "tempo_espera": "1:12",
-      "espera_min": 72,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737287",
-      "paciente": "RENATA DA COSTA ROCHA DE OLIVEIRA",
-      "cor": "VERDE",
-      "tempo_espera": "1:7",
-      "espera_min": 67,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737290",
-      "paciente": "ANA BEATRIZ DOS SANTOS MONTE",
-      "cor": "VERDE",
-      "tempo_espera": "1:5",
-      "espera_min": 65,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737291",
-      "paciente": "MARIA EMILIA TADEU ESTEVES BASTOS",
-      "cor": "VERDE",
-      "tempo_espera": "1:2",
-      "espera_min": 62,
-      "estourado": true
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737292",
-      "paciente": "GUSTAVO OLIVEIRA PREDES",
-      "cor": "VERDE",
-      "tempo_espera": "0:59",
-      "espera_min": 59,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737297",
-      "paciente": "MARIA VANUSA ALVES DA SLVA",
-      "cor": "VERDE",
-      "tempo_espera": "0:58",
-      "espera_min": 58,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737299",
-      "paciente": "MARIA DE FATIMA DE OLIVEIRA",
-      "cor": "VERDE",
-      "tempo_espera": "0:56",
-      "espera_min": 56,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737300",
-      "paciente": "BENEDITO ALVES VIEIRA",
-      "cor": "VERDE",
-      "tempo_espera": "0:54",
-      "espera_min": 54,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737298",
-      "paciente": "JOAO EDUARDO DA SILVA",
-      "cor": "VERDE",
-      "tempo_espera": "0:53",
-      "espera_min": 53,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737302",
-      "paciente": "SABRINA PESCARSKI DA COSTA",
-      "cor": "VERDE",
-      "tempo_espera": "0:51",
-      "espera_min": 51,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737303",
-      "paciente": "LUCAS GABRIEL DUARTE DA SILVA",
-      "cor": "VERDE",
-      "tempo_espera": "0:50",
-      "espera_min": 50,
-      "estourado": false
-    },
-    {
-      "especialidade": "CLINICA MEDICA",
-      "boletim": "1737186",
-      "paciente": "VICTOR DE SOUTO SOARES",
-      "cor": "AZUL",
-      "tempo_espera": "4:31",
-      "espera_min": 271,
-      "estourado": true
-    }
-  ]
+  "pacientes_criticos": []
 }
