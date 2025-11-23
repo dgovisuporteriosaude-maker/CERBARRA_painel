@@ -1,0 +1,54 @@
+{
+  "gerado_em": "2025-11-23 14:29:53",
+  "fila_classificacao": {
+    "quantidade": 5,
+    "tempo_max_espera_min": 63
+  },
+  "especialidades": {
+    "CLINICA MEDICA": {
+      "total_fila": 13,
+      "tempo_max_espera_min": 47,
+      "por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 1,
+        "VERDE": 12,
+        "AZUL": 0
+      },
+      "criticos_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 0,
+        "VERDE": 0,
+        "AZUL": 0
+      },
+      "max_espera_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 7,
+        "VERDE": 47,
+        "AZUL": 0
+      }
+    },
+    "PEDIATRIA": {
+      "total_fila": 1,
+      "tempo_max_espera_min": 13,
+      "por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 0,
+        "VERDE": 1,
+        "AZUL": 0
+      },
+      "criticos_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 0,
+        "VERDE": 0,
+        "AZUL": 0
+      },
+      "max_espera_por_cor": {
+        "LARANJA": 0,
+        "AMARELO": 0,
+        "VERDE": 13,
+        "AZUL": 0
+      }
+    }
+  },
+  "pacientes_criticos": []
+}
