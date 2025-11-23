@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>FILA DE ESPERA • CERBARRA</title>
+  <title>FILA DE ESPERA • CER BARRA/title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -114,6 +114,24 @@
     .card-subtitle {
       font-size: 0.83rem;
       color: var(--text-muted);
+    }
+
+    /* Cabeçalho e padding menores nos cards da direita (listas rolantes) */
+    .col-right .card {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .col-right .card-header {
+      margin-bottom: 4px;
+    }
+
+    .col-right .card-title {
+      font-size: 1rem;
+    }
+
+    .col-right .card-subtitle {
+      font-size: 0.78rem;
     }
 
     .chip-mode {
@@ -241,7 +259,7 @@
       background: linear-gradient(to bottom right, #e5e7eb, #4b5563);
     }
 
-    /* Listas de críticos e retorno: limitar para ~4 pacientes visíveis */
+    /* Listas de críticos e retorno: ~3 pacientes visíveis */
     #criticos-lista,
     #retorno-lista {
       list-style: none;
@@ -250,7 +268,7 @@
       display: flex;
       flex-direction: column;
       gap: 6px;
-      max-height: 260px;       /* ~4 cards visíveis, o resto via scroll */
+      max-height: 170px;       /* ~3 cards; resto via scroll */
       overflow-y: auto;
     }
 
@@ -415,7 +433,7 @@
     <header>
       <h1>
         Fila de Espera
-        <span class="pill"><span>CERBARRA</span> • Emergência</span>
+        <span class="pill"><span>CER BARRA</span> • Emergência</span>
       </h1>
       <p class="subline">
         Fila atual do TiMed. Pacientes de <strong>retorno</strong> não entram nas metas;
@@ -572,9 +590,7 @@
           <div class="card-header">
             <div>
               <div class="card-title">Pacientes aguardando retorno</div>
-              <div class="card-subtitle">
-                Totais em fila e retornos com tempo de espera igual ou superior a 5 horas.
-              </div>
+              <div class="card-subtitle"></div>
             </div>
             <div class="retorno-totais">
               <div class="mini-stat">
@@ -601,7 +617,7 @@
   </div>
 
   <script>
-    const REFRESH_INTERVAL_MS = 30000; // 30 segundos
+    const REFRESH_INTERVAL_MS = 10000; // 10 segundos
     const DATA_URL = "data/painel_fila_CERBARRA.json";
 
     const ESPECIALIDADES_CONFIG = {
@@ -629,7 +645,10 @@
       return `${min}min`;
     }
 
-    // Rolagem automática em câmera lenta, em loop
+    // Rolagem automática:
+    // - rola lentamente até o fim
+    // - ao chegar no último, volta pro topo e PARA
+    // - se o usuário mexer, para na hora
     function startAutoScroll(listEl, key) {
       if (!listEl) return;
 
@@ -642,8 +661,30 @@
       // Sempre começa do topo
       listEl.scrollTop = 0;
 
-      const stepPx = 1;       // 1 px por "tick"
-      const intervalMs = 80;  // a cada 80 ms → ~12,5 px/s (bem lento)
+      let maxScroll = listEl.scrollHeight - listEl.clientHeight;
+      if (maxScroll <= 0) {
+        // Nada pra rolar
+        return;
+      }
+
+      // Função que para a rolagem se o usuário interagir
+      const stopAuto = () => {
+        if (scrollTimers[key]) {
+          clearInterval(scrollTimers[key]);
+          scrollTimers[key] = null;
+        }
+      };
+
+      // Só adiciona os listeners uma vez por elemento
+      if (!listEl.dataset.autoScrollListenerAttached) {
+        ["wheel", "touchstart", "mousedown"].forEach((ev) => {
+          listEl.addEventListener(ev, stopAuto, { passive: true });
+        });
+        listEl.dataset.autoScrollListenerAttached = "1";
+      }
+
+      const stepPx = 1;       // 1 px por tick
+      const intervalMs = 80;  // ~12,5 px/s (lento)
 
       scrollTimers[key] = setInterval(() => {
         // Se o elemento saiu do DOM, para o timer
@@ -653,19 +694,23 @@
           return;
         }
 
-        const maxScroll = listEl.scrollHeight - listEl.clientHeight;
-
-        // Se não tem rolagem, fica parado no topo
+        maxScroll = listEl.scrollHeight - listEl.clientHeight;
         if (maxScroll <= 0) {
           listEl.scrollTop = 0;
+          clearInterval(scrollTimers[key]);
+          scrollTimers[key] = null;
           return;
         }
 
-        if (listEl.scrollTop >= maxScroll) {
-          // Chegou no final → volta pro topo (loop infinito)
+        // Detecção mais precisa do fim
+        const proximoScroll = listEl.scrollTop + stepPx;
+        if (proximoScroll >= maxScroll - 1) {
+          // Chegou no final → volta pro topo e trava até a próxima atualização
           listEl.scrollTop = 0;
+          clearInterval(scrollTimers[key]);
+          scrollTimers[key] = null;
         } else {
-          listEl.scrollTop += stepPx;
+          listEl.scrollTop = proximoScroll;
         }
       }, intervalMs);
     }
