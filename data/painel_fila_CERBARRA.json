@@ -1,17 +1,17 @@
 {
-  "gerado_em": "2025-11-23 18:03:51",
+  "gerado_em": "2025-11-23 18:07:15",
   "fila_classificacao": {
-    "quantidade": 6,
-    "tempo_max_espera_min": 8
+    "quantidade": 7,
+    "tempo_max_espera_min": 6
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 16,
-      "tempo_max_espera_min": 108,
+      "total_fila": 17,
+      "tempo_max_espera_min": 112,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 3,
-        "VERDE": 12,
+        "VERDE": 13,
         "AZUL": 1
       },
       "criticos_por_cor": {
@@ -22,18 +22,18 @@
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 34,
-        "VERDE": 50,
-        "AZUL": 108
+        "AMARELO": 38,
+        "VERDE": 54,
+        "AZUL": 112
       }
     },
     "PEDIATRIA": {
-      "total_fila": 0,
-      "tempo_max_espera_min": 0,
+      "total_fila": 1,
+      "tempo_max_espera_min": 2,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 0,
+        "VERDE": 1,
         "AZUL": 0
       },
       "criticos_por_cor": {
@@ -45,7 +45,7 @@
       "max_espera_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 0,
+        "VERDE": 2,
         "AZUL": 0
       }
     }
@@ -54,8 +54,8 @@
     {
       "boletim": "1737822",
       "paciente": "AURORA PEREIRA DOS SANTOS",
-      "tempo_espera": "0:34",
-      "espera_min": 34,
+      "tempo_espera": "0:38",
+      "espera_min": 38,
       "cor": "AMARELO",
       "especialidade": "CLINICA MEDICA",
       "estourado": true
@@ -63,8 +63,8 @@
     {
       "boletim": "1737814",
       "paciente": "GUILHERME FERRAZ MARTINS",
-      "tempo_espera": "0:50",
-      "espera_min": 50,
+      "tempo_espera": "0:54",
+      "espera_min": 54,
       "cor": "VERDE",
       "especialidade": "CLINICA MEDICA",
       "estourado": false
