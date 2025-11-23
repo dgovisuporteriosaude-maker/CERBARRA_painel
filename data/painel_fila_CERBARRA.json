@@ -1,17 +1,17 @@
 {
-  "gerado_em": "2025-11-23 16:42:16",
+  "gerado_em": "2025-11-23 17:36:44",
   "fila_classificacao": {
     "quantidade": 5,
-    "tempo_max_espera_min": 7
+    "tempo_max_espera_min": 5
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 8,
-      "tempo_max_espera_min": 32,
+      "total_fila": 12,
+      "tempo_max_espera_min": 81,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
-        "VERDE": 6,
+        "AMARELO": 3,
+        "VERDE": 8,
         "AZUL": 1
       },
       "criticos_por_cor": {
@@ -22,18 +22,18 @@
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 7,
-        "VERDE": 32,
-        "AZUL": 27
+        "AMARELO": 10,
+        "VERDE": 33,
+        "AZUL": 81
       }
     },
     "PEDIATRIA": {
-      "total_fila": 0,
-      "tempo_max_espera_min": 0,
+      "total_fila": 1,
+      "tempo_max_espera_min": 2,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 0,
+        "VERDE": 1,
         "AZUL": 0
       },
       "criticos_por_cor": {
@@ -45,22 +45,13 @@
       "max_espera_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 0,
+        "VERDE": 2,
         "AZUL": 0
       }
     }
   },
   "pacientes_criticos": [],
-  "retorno_total": 20,
-  "retorno_critico_total": 1,
-  "pacientes_retorno_criticos": [
-    {
-      "boletim": "1737631",
-      "paciente": "PEDRO JOSE SILVA DE ALMEIDA",
-      "tempo_espera": "4:19",
-      "espera_min": 259,
-      "cor": "",
-      "especialidade": "CLINICA MEDICA"
-    }
-  ]
+  "retorno_total": 12,
+  "retorno_critico_total": 0,
+  "pacientes_retorno_criticos": []
 }
