@@ -1,39 +1,39 @@
 {
-  "gerado_em": "2025-11-23 15:31:30",
+  "gerado_em": "2025-11-23 15:49:03",
   "fila_classificacao": {
-    "quantidade": 8,
-    "tempo_max_espera_min": 8
+    "quantidade": 12,
+    "tempo_max_espera_min": 21
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 10,
-      "tempo_max_espera_min": 52,
+      "total_fila": 7,
+      "tempo_max_espera_min": 44,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 2,
-        "VERDE": 8,
+        "AMARELO": 1,
+        "VERDE": 6,
         "AZUL": 0
       },
       "criticos_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 1,
+        "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 15,
-        "VERDE": 52,
+        "AMARELO": 11,
+        "VERDE": 44,
         "AZUL": 0
       }
     },
     "PEDIATRIA": {
-      "total_fila": 1,
-      "tempo_max_espera_min": 9,
+      "total_fila": 2,
+      "tempo_max_espera_min": 20,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
-        "VERDE": 0,
+        "AMARELO": 0,
+        "VERDE": 2,
         "AZUL": 0
       },
       "criticos_por_cor": {
@@ -44,21 +44,11 @@
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 9,
-        "VERDE": 0,
+        "AMARELO": 0,
+        "VERDE": 20,
         "AZUL": 0
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "boletim": "1737760",
-      "paciente": "ERINALDO MARTINIANO DE LIMA",
-      "tempo_espera": "0:52",
-      "espera_min": 52,
-      "cor": "VERDE",
-      "especialidade": "CLINICA MEDICA",
-      "estourado": false
-    }
-  ]
+  "pacientes_criticos": []
 }
