@@ -1,39 +1,39 @@
 {
-  "gerado_em": "2025-11-23 15:52:32",
+  "gerado_em": "2025-11-23 15:55:50",
   "fila_classificacao": {
     "quantidade": 14,
-    "tempo_max_espera_min": 24
+    "tempo_max_espera_min": 27
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 9,
-      "tempo_max_espera_min": 36,
+      "total_fila": 8,
+      "tempo_max_espera_min": 29,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 3,
+        "AMARELO": 2,
         "VERDE": 6,
         "AZUL": 0
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
+        "AMARELO": 0,
         "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 36,
+        "AMARELO": 17,
         "VERDE": 29,
         "AZUL": 0
       }
     },
     "PEDIATRIA": {
-      "total_fila": 2,
-      "tempo_max_espera_min": 23,
+      "total_fila": 1,
+      "tempo_max_espera_min": 26,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 2,
+        "VERDE": 1,
         "AZUL": 0
       },
       "criticos_por_cor": {
@@ -45,20 +45,10 @@
       "max_espera_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 23,
+        "VERDE": 26,
         "AZUL": 0
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "boletim": "1737768",
-      "paciente": "MAICON FERREIRA DE OLIVEIRA",
-      "tempo_espera": "0:36",
-      "espera_min": 36,
-      "cor": "AMARELO",
-      "especialidade": "CLINICA MEDICA",
-      "estourado": true
-    }
-  ]
+  "pacientes_criticos": []
 }
