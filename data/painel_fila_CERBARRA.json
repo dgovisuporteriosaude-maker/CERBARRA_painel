@@ -1,17 +1,17 @@
 {
-  "gerado_em": "2025-11-23 16:25:51",
+  "gerado_em": "2025-11-23 16:29:07",
   "fila_classificacao": {
     "quantidade": 1,
-    "tempo_max_espera_min": 0
+    "tempo_max_espera_min": 1
   },
   "especialidades": {
     "CLINICA MEDICA": {
       "total_fila": 10,
-      "tempo_max_espera_min": 29,
+      "tempo_max_espera_min": 33,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 2,
-        "VERDE": 7,
+        "AMARELO": 1,
+        "VERDE": 8,
         "AZUL": 1
       },
       "criticos_por_cor": {
@@ -22,9 +22,9 @@
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 17,
-        "VERDE": 29,
-        "AZUL": 10
+        "AMARELO": 13,
+        "VERDE": 33,
+        "AZUL": 14
       }
     },
     "PEDIATRIA": {
@@ -51,14 +51,14 @@
     }
   },
   "pacientes_criticos": [],
-  "retorno_total": 22,
+  "retorno_total": 21,
   "retorno_critico_total": 1,
   "pacientes_retorno_criticos": [
     {
       "boletim": "1737631",
       "paciente": "PEDRO JOSE SILVA DE ALMEIDA",
-      "tempo_espera": "4:2",
-      "espera_min": 242,
+      "tempo_espera": "4:6",
+      "espera_min": 246,
       "cor": "",
       "especialidade": "CLINICA MEDICA"
     }
