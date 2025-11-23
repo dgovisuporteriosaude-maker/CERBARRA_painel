@@ -1,39 +1,39 @@
 {
-  "gerado_em": "2025-11-23 15:55:50",
+  "gerado_em": "2025-11-23 15:59:08",
   "fila_classificacao": {
-    "quantidade": 14,
-    "tempo_max_espera_min": 27
+    "quantidade": 12,
+    "tempo_max_espera_min": 12
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 8,
+      "total_fila": 9,
       "tempo_max_espera_min": 29,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 2,
-        "VERDE": 6,
+        "VERDE": 7,
         "AZUL": 0
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 0,
+        "AMARELO": 1,
         "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 17,
+        "AMARELO": 21,
         "VERDE": 29,
         "AZUL": 0
       }
     },
     "PEDIATRIA": {
-      "total_fila": 1,
-      "tempo_max_espera_min": 26,
+      "total_fila": 0,
+      "tempo_max_espera_min": 0,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 1,
+        "VERDE": 0,
         "AZUL": 0
       },
       "criticos_por_cor": {
@@ -45,10 +45,20 @@
       "max_espera_por_cor": {
         "LARANJA": 0,
         "AMARELO": 0,
-        "VERDE": 26,
+        "VERDE": 0,
         "AZUL": 0
       }
     }
   },
-  "pacientes_criticos": []
+  "pacientes_criticos": [
+    {
+      "boletim": "1737780",
+      "paciente": "MARIA SALETE SILVEIRA RODRIGUES",
+      "tempo_espera": "0:21",
+      "espera_min": 21,
+      "cor": "AMARELO",
+      "especialidade": "CLINICA MEDICA",
+      "estourado": false
+    }
+  ]
 }
