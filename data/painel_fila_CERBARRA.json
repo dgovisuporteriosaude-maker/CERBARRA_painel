@@ -1,17 +1,17 @@
 {
-  "gerado_em": "2025-11-23 17:53:46",
+  "gerado_em": "2025-11-23 17:57:07",
   "fila_classificacao": {
-    "quantidade": 5,
-    "tempo_max_espera_min": 7
+    "quantidade": 6,
+    "tempo_max_espera_min": 11
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 13,
-      "tempo_max_espera_min": 98,
+      "total_fila": 14,
+      "tempo_max_espera_min": 102,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 3,
-        "VERDE": 9,
+        "VERDE": 10,
         "AZUL": 1
       },
       "criticos_por_cor": {
@@ -22,9 +22,9 @@
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 27,
-        "VERDE": 40,
-        "AZUL": 98
+        "AMARELO": 31,
+        "VERDE": 44,
+        "AZUL": 102
       }
     },
     "PEDIATRIA": {
@@ -54,23 +54,23 @@
     {
       "boletim": "1737820",
       "paciente": "NEIDE APARECIDA JORGE CUNHA",
-      "tempo_espera": "0:27",
-      "espera_min": 27,
+      "tempo_espera": "0:31",
+      "espera_min": 31,
       "cor": "AMARELO",
       "especialidade": "CLINICA MEDICA",
-      "estourado": false
+      "estourado": true
     },
     {
       "boletim": "1737822",
       "paciente": "AURORA PEREIRA DOS SANTOS",
-      "tempo_espera": "0:24",
-      "espera_min": 24,
+      "tempo_espera": "0:28",
+      "espera_min": 28,
       "cor": "AMARELO",
       "especialidade": "CLINICA MEDICA",
       "estourado": false
     }
   ],
-  "retorno_total": 19,
+  "retorno_total": 20,
   "retorno_critico_total": 0,
   "pacientes_retorno_criticos": []
 }
