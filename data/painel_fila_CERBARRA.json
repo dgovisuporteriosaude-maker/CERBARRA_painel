@@ -1,30 +1,30 @@
 {
-  "gerado_em": "2025-11-23 16:35:43",
+  "gerado_em": "2025-11-23 16:39:00",
   "fila_classificacao": {
     "quantidade": 2,
-    "tempo_max_espera_min": 7
+    "tempo_max_espera_min": 3
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 10,
-      "tempo_max_espera_min": 38,
+      "total_fila": 9,
+      "tempo_max_espera_min": 34,
       "por_cor": {
         "LARANJA": 0,
         "AMARELO": 2,
-        "VERDE": 7,
+        "VERDE": 6,
         "AZUL": 1
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 0,
+        "AMARELO": 1,
         "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 19,
-        "VERDE": 38,
-        "AZUL": 20
+        "AMARELO": 22,
+        "VERDE": 34,
+        "AZUL": 23
       }
     },
     "PEDIATRIA": {
@@ -50,15 +50,25 @@
       }
     }
   },
-  "pacientes_criticos": [],
-  "retorno_total": 23,
+  "pacientes_criticos": [
+    {
+      "boletim": "1737795",
+      "paciente": "LIDUINA MATIAS POLICARPO",
+      "tempo_espera": "0:22",
+      "espera_min": 22,
+      "cor": "AMARELO",
+      "especialidade": "CLINICA MEDICA",
+      "estourado": false
+    }
+  ],
+  "retorno_total": 21,
   "retorno_critico_total": 1,
   "pacientes_retorno_criticos": [
     {
       "boletim": "1737631",
       "paciente": "PEDRO JOSE SILVA DE ALMEIDA",
-      "tempo_espera": "4:12",
-      "espera_min": 252,
+      "tempo_espera": "4:15",
+      "espera_min": 255,
       "cor": "",
       "especialidade": "CLINICA MEDICA"
     }
