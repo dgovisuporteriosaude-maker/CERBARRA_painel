@@ -1,29 +1,29 @@
 {
-  "gerado_em": "2025-11-23 15:15:07",
+  "gerado_em": "2025-11-23 15:18:23",
   "fila_classificacao": {
-    "quantidade": 7,
-    "tempo_max_espera_min": 36
+    "quantidade": 5,
+    "tempo_max_espera_min": 16
   },
   "especialidades": {
     "CLINICA MEDICA": {
-      "total_fila": 9,
-      "tempo_max_espera_min": 45,
+      "total_fila": 10,
+      "tempo_max_espera_min": 48,
       "por_cor": {
         "LARANJA": 0,
-        "AMARELO": 3,
+        "AMARELO": 4,
         "VERDE": 6,
         "AZUL": 0
       },
       "criticos_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 1,
+        "AMARELO": 0,
         "VERDE": 0,
         "AZUL": 0
       },
       "max_espera_por_cor": {
         "LARANJA": 0,
-        "AMARELO": 20,
-        "VERDE": 45,
+        "AMARELO": 16,
+        "VERDE": 48,
         "AZUL": 0
       }
     },
@@ -50,15 +50,5 @@
       }
     }
   },
-  "pacientes_criticos": [
-    {
-      "boletim": "1737764",
-      "paciente": "LEZIR PEIXOTO",
-      "tempo_espera": "0:20",
-      "espera_min": 20,
-      "cor": "AMARELO",
-      "especialidade": "CLINICA MEDICA",
-      "estourado": false
-    }
-  ]
+  "pacientes_criticos": []
 }
